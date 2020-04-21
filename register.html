@@ -17,8 +17,29 @@
     <main>
         <form action="">
             <p>
+                <label for="name">Naam:</label>
+                <input type="text" name="name" id="">
+            </p>
+            <p>
+                <label for="lastname">Achternaam:</label>
+                <input type="text" name="lastname" id="">
+            </p>
+            <p>
                 <label for="email">Email:<br></label>
                 <input type="email" name="email" id="">
+            </p>
+            <p>
+                <label for="adress">Straat en Huisnummer:</label>
+                <input type="text" name="adress" id="street">
+                <input type="text" name="adress" id="number">
+            </p>
+            <p>
+                <label for="postcode">Postcode:</label>
+                <input type="text" name="postcode" id="">
+            </p>
+            <p>
+                <label for="city">Plaats:</label>
+                <input type="text" name="city" id="">
             </p>
             <p>
                 <label for="password">Wachtwoord:<br></label>
@@ -27,7 +48,11 @@
             <p>
                 <a href="">Wachtwoord vergeten?</a>
             </p>
-            <input type="submit" value="Login">
+            <p>
+                <label for="repeat pw">Herhaal Wachtwoord:</label>
+                <input type="password" name="repeat pw" id="">
+            </p>
+            <input type="submit" value="Registreer">
         </form>
     </main>
 </body>
