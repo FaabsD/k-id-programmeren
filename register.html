@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/register.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Document</title>
 </head>
 
@@ -43,10 +44,15 @@
             </p>
             <p>
                 <label for="password">Wachtwoord:<br></label>
-                <input type="password" name="password" id="">
+                <input type="password" name="password" id="password">
             </p>
             <p>
-                <a href="">Wachtwoord vergeten?</a>
+                <div class="passwordtester">
+                    Wachtwoordsterkte:
+                    <div class="figure">
+                        <div id="strength"></div>
+                    </div>
+                </div>
             </p>
             <p>
                 <label for="repeat pw">Herhaal Wachtwoord:</label>
@@ -55,6 +61,7 @@
             <input type="submit" value="Registreer">
         </form>
     </main>
+    <script src="passwordcheck.js"></script>
 </body>
 
 </html>
