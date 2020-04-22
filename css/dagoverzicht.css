@@ -83,9 +83,9 @@ nav a{
     grid-column: 1/-1;
 }
 /* stijl voor de main elementen */
-main{
+main, aside{
     display: grid;
-    grid-template-rows: repeat(auto-fill, max-content);
+    grid-template-rows: repeat(12, auto);
 }
 main img{
     vertical-align: middle;
@@ -101,10 +101,7 @@ main p{
     vertical-align: middle;
 }
 /* stijl voor checkboxes */
-aside{
-    display: grid;
-    grid-template-rows: repeat(auto-fill, min-content);
-}
+
 @supports ( (-webkit-appearance: none) or (-moz-appearance: none) ){
     .check {
         -webkit-appearance: none;
